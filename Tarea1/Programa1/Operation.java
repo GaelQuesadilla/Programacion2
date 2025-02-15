@@ -53,11 +53,11 @@ public class Operation {
     }
 
     public void calcMultiply() {
-        this.multiply = number1 * number2;
+        this.multiply = (double) number1 * number2;
     }
 
     public void calcDivide() {
-        this.divide = number1 / number2;
+        this.divide = (double) number1 / number2;
     }
 
 }

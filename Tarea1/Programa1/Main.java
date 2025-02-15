@@ -10,7 +10,7 @@ public class Main {
         final double secondNumber = terminal.getNumber();
 
         operation.setNumber1(firstNumber);
-        operation.setNumber1(secondNumber);
+        operation.setNumber2(secondNumber);
         operation.calcSum();
         operation.calcSubtract();
         operation.calcMultiply();
