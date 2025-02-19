@@ -5,11 +5,11 @@ public class Square extends GeometricFigure {
     private double side;
 
     public void calcPerimeter() {
-        this.perimeter = this.side * 4;
+        this.calcArea(side);
     }
 
     public void calcArea() {
-        this.perimeter = Math.pow(this.side, 2);
+        this.calcArea(this.side);
     }
 
     public Square(double perimeter, double area, String name) {
