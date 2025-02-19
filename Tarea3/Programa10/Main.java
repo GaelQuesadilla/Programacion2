@@ -6,6 +6,7 @@ public class Main {
         Team team;
         String newName;
         double newPoints;
+        int option;
 
         terminal.Print("Equipo 7. Elaborado por:");
         terminal.Print("Frida Alejandra Mendoza Martinez");
@@ -13,22 +14,36 @@ public class Main {
 
         terminal.Print("Registro y cambio de atributos de la clase Teams (Equipos) mediante la sobrecarga de métodos");
 
-        terminal.Print("-> Uso de constructor");
-        newName = terminal.requestString("Ingresa el nombre del equipo");
-        newPoints = terminal.requestDouble("Ingresa la cantidad de puntos del equipo");
-        team = new Team(newPoints, newName);
+        terminal.Print("-> Uso de constructor: Equipo \"Lobos\", puntos: 7");
+        team = new Team(7d, "Lobos");
         terminal.Print(team.toString());
 
-        terminal.Print("-> Cambio de nombre");
-        newName = terminal.requestString("Ingresa el nuevo nombre del equipo");
-        team.change(newName);
-        terminal.Print(team.toString());
+        terminal.Print("---------------------");
+        terminal.Print("\tOpciones");
+        terminal.Print("---------------------");
+        terminal.Print("(1) Cambiar nombre\n(2) Cambiar puntos\n(3) Cambiar nombre y puntos");
 
-        terminal.Print("-> Cambio de puntos");
-        newPoints = terminal.requestDouble("Ingresa el nuevo puntaje del equipo");
-        team.change(newPoints);
+        option = terminal.requestInt("Ingresa la opción (1,2,3)");
+
+        if (option == 1) {
+            newName = terminal.requestString("Ingresa el nombre:");
+            team.change(newName);
+        } else if (option == 2) {
+
+            newPoints = terminal.requestDouble("Ingresa los puntos:");
+            team.change(newPoints);
+
+        } else if (option == 3) {
+            newName = terminal.requestString("Ingresa el nombre:");
+            newPoints = terminal.requestDouble("Ingresa los puntos:");
+            team.change(newName, newPoints);
+
+        } else {
+            terminal.Print("Error: Opción inválida");
+            System.exit(0);
+        }
+
         terminal.Print(team.toString());
-        ;
 
     }
 }
