@@ -12,8 +12,8 @@ public class Triangle extends GeometricFigure {
         this.calcArea(base, height);
     }
 
-    public Triangle(double perimeter, double area, String name, double base, double height) {
-        super(perimeter, area, name);
+    public Triangle(String name, double base, double height) {
+        this.name = name;
         this.base = base;
         this.height = height;
     }

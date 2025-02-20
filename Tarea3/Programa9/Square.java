@@ -4,8 +4,13 @@ public class Square extends GeometricFigure {
 
     private double side;
 
+    public Square(String name, double side) {
+        this.side = side;
+        this.name = name;
+    }
+
     public void calcPerimeter() {
-        this.calcArea(side);
+        this.calcPerimeter(side);
     }
 
     public void calcArea() {
