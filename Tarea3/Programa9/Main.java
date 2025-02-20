@@ -4,6 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Terminal terminal = new Terminal();
 
+        terminal.Print("Equipo 7. Elaborado por:");
+        terminal.Print("Frida Alejandra Mendoza Martinez");
+        terminal.Print("Gael Gonzalez Mendez");
+
+        terminal.Print("Programa que registra y calcula el área y perímetro de un triangulo y un cuadrado");
+
         // Crear un triángulo
         double base = 5, height = 7;
         Triangle triangle = new Triangle("Triángulo", base, height);
