@@ -11,7 +11,7 @@ public class Boss extends Employee {
     }
 
     public double calculateBaseSalary() {
-        double compensation = this.baseSalary * this.compensationPercentage / 100;
+        double compensation = this.baseSalary * (1 + this.compensationPercentage / 100);
         return super.calculateBaseSalary() + compensation;
     }
 

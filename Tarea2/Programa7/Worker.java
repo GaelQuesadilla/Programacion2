@@ -5,14 +5,15 @@ public class Worker extends Employee {
     private int hoursWorked;
     private double hourlyRate;
 
-    public Worker(String rFC, String name, double baseSalary, int hoursWorked, double hourlyRate) {
-        super(rFC, name, baseSalary);
+    public Worker(String rFC, String name, int hoursWorked, double hourlyRate) {
+        super(rFC, name, 0d);
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
     }
 
     public double calculateBaseSalary() {
-        return super.calculateBaseSalary() + this.hourlyRate * this.hoursWorked;
+        this.baseSalary = hoursWorked * hourlyRate;
+        return this.baseSalary;
     }
 
     public String getInfo() {

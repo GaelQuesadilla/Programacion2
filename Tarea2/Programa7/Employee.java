@@ -11,7 +11,7 @@ public class Employee {
     }
 
     public double calculateBaseSalary() {
-        return this.baseSalary * 15;
+        return 0d;
     }
 
     public String getInfo() {

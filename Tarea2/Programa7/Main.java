@@ -15,13 +15,14 @@ public class Main {
 
         String name = terminal.getString("Ingresa el nombre");
         String RFC = terminal.getString("Escribe el RFC");
-        double baseSalary = terminal.getDouble("Escribe el salario base");
         if (option == 1) {
             int hoursWorked = terminal.getInt("Ingresa el número de horas trabajadas");
             double hourlyRate = terminal.getDouble("Ingresa el salario por hora");
 
-            employee = new Worker(RFC, name, baseSalary, hoursWorked, hourlyRate);
+            employee = new Worker(RFC, name, hoursWorked, hourlyRate);
         } else if (option == 2) {
+
+            double baseSalary = terminal.getDouble("Escribe el salario base");
             String department = terminal.getString("Ingresa el departamento");
             double compensationPercentage = terminal.getDouble("Ingresa el porcentaje de compensación");
             employee = new Boss(RFC, name, baseSalary, department, compensationPercentage);
