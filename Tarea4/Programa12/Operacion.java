@@ -10,16 +10,6 @@ public abstract class Operacion {
         return String.format("%s/%s", numR, denR);
     }
 
-    public Operacion(int num1, int num2, int den1, int den2) {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.den1 = den1;
-        this.den2 = den2;
-    }
-
-    public Operacion() {
-    }
-
     public int getNum1() {
         return num1;
     }
