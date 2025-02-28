@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package programa17;
+package Tarea5.Programa14;
 
 import java.util.Scanner;
 
@@ -16,8 +16,9 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        System.out.println("Equipo 7 \nElaborado por: \nHector Desiderio Erasto \nGael Gonzalez Mendez \nFrida Alejandra Mendoza Martinez");
+
+        System.out.println(
+                "Equipo 7 \nElaborado por: \nHector Desiderio Erasto \nGael Gonzalez Mendez \nFrida Alejandra Mendoza Martinez");
         System.out.println("Programa 17");
         System.out.println("Ordenamiento de seleccion");
 
