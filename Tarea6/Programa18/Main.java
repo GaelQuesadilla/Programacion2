@@ -45,6 +45,8 @@ public class Main {
         terminal.Print("Cantidad de pacientes:");
         terminal.Print(selectionSort.getPatients());
 
+        terminal.Print("El doctor con menos pacientes es: " + selectionSort.getNames()[0]);
+        terminal.Print("El doctor con más pacientes es: " + selectionSort.getNames()[total - 1]);
     }
 
 }
