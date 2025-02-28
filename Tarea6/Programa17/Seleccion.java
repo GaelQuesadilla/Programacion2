@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Tarea5.Programa14;
+package Tarea6.Programa17;
 
 /**
  *
@@ -17,10 +17,8 @@ public class Seleccion {
         for (i = 0; i < n; i = i + 1) {
             min = i;
             for (j = i + 1; j < n; j = j + 1) {
-
                 if (vector[j] < vector[min]) {
                     min = j;
-
                 }
             }
             aux = vector[i];

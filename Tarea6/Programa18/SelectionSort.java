@@ -9,6 +9,9 @@ public class SelectionSort {
         this.names = names;
     }
 
+    public SelectionSort() {
+    }
+
     public void sort() {
 
         int minIndex, auxInt;
@@ -18,8 +21,8 @@ public class SelectionSort {
 
             minIndex = i;
 
-            for (int j = 0; j < this.patients.length; j++) {
-                if (this.patients[j] < this.patients[minIndex]) {
+            for (int j = i + 1; j < this.patients.length; j++) {
+                if (this.patients[minIndex] > this.patients[j]) {
                     minIndex = j;
                 }
 
@@ -28,6 +31,10 @@ public class SelectionSort {
             auxInt = this.patients[i];
             this.patients[i] = this.patients[minIndex];
             this.patients[minIndex] = auxInt;
+
+            auxStr = this.names[i];
+            this.names[i] = this.names[minIndex];
+            this.names[minIndex] = auxStr;
 
         }
 
