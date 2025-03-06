@@ -1,4 +1,4 @@
-array = [20, 5, 8, 11, 45, 3, 6, 9, 1, 17]
+array = [27, 1, 17, 11, 49, 2, 6, 9, 8, 3]
 print(array)
 
 for i in range(len(array)-1):
