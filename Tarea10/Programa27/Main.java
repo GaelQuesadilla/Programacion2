@@ -9,23 +9,24 @@ public class Main {
         int total = 10;
 
         int products[] = new int[total];
+        terminal.Print("Ingresa las cantidades de los productos ");
+        for (int i = 0; i < products.length; i++) {
+            products[i] = terminal.requestInt("Ingresa el producto n. " + (i + 1));
+        }
 
+        sequentialSearch.setArray(products);
         int option = 1;
 
         while (true) {
             if (option == 2) {
                 break;
             }
-            terminal.Print("Ingresa las cantidades de los productos ");
-            for (int i = 0; i < products.length; i++) {
-                products[i] = terminal.requestInt("Ingresa el producto n. " + (i + 1));
-            }
 
             int numberToSearch = terminal.requestInt("Ingresa el numero a buscar");
 
             sequentialSearch.setArray(products);
             sequentialSearch.search(numberToSearch);
-            option = terminal.requestInt("Continuar?...\t(1:Si\t2:No)");
+            option = terminal.requestInt("buscar otro numero?...\t(1:Si\t2:No)");
 
         }
     }
