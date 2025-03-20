@@ -8,6 +8,14 @@ public class Main {
         SequentialSearch sequentialSearch = new SequentialSearch();
         int total = 10;
 
+        terminal.Print("Equipo 7. Elaborado por:");
+        terminal.Print("Frida Alejandra Mendoza Martinez");
+        terminal.Print("Gael González Méndez");
+        terminal.Print("Héctor Desiderio Erasto");
+
+        terminal.Print(
+                "Registra 10 productos y realiza una búsqueda de manera secuencial para buscar el producto con la cantidad solicitada");
+
         int products[] = new int[total];
         terminal.Print("Ingresa las cantidades de los productos ");
         for (int i = 0; i < products.length; i++) {

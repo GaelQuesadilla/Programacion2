@@ -17,7 +17,7 @@ public class SequentialSearch {
             System.out.println("Elemento no encontrado");
             return;
         }
-        System.out.printf("El elemento %s se encuentra en la posición %s\n", number, i);
+        System.out.printf("El elemento %s se encuentra en la posición %s\n", number, i - 1);
 
     }
 
