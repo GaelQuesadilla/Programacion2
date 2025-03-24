@@ -16,7 +16,7 @@ public class Terminal {
     }
 
     public void PrintResult(String valueName, double value) {
-        System.out.printf("El resultado de %s es %s\n", valueName, value);
+        System.out.printf("El resultado de %s es %s\n", valueName, String.format("%.2f", value));
     }
 
 }
