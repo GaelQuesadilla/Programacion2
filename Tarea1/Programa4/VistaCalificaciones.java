@@ -14,7 +14,9 @@ public class VistaCalificaciones {
     }
 
     public void mostrarResultados(double promedio, double porcentaje) {
-        System.out.println("\nPromedio de calificaciones: " + promedio);
-        System.out.println("Porcentaje de alumnos con calificación mayor o igual al promedio: " + porcentaje + "%");
+        System.out.println("\nPromedio de calificaciones: " + String.format("%.2f", promedio));
+        System.out.println(
+                "Porcentaje de alumnos con calificación mayor o igual al promedio: "
+                        + String.format("%.2f", porcentaje) + "%");
     }
 }
