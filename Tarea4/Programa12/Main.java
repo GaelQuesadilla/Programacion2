@@ -7,7 +7,8 @@ public class Main {
         Operacion operacion = null;
         int opcion;
 
-        terminal.Print("Equipo 7. Elaborado por:\nFrida Alejandra Mendoza Martinez\nGael González Méndez");
+        terminal.Print(
+                "Equipo 7. Elaborado por:\nFrida Alejandra Mendoza Martinez\nGael González Méndez\nHéctor Desiderio Erasto");
 
         terminal.Print("Suma o multiplicación de fracciones");
         fraccion1 = terminal.requestFraction("Ingresa la primer fracción");

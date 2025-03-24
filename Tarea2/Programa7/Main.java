@@ -9,7 +9,7 @@ public class Main {
         terminal.Print("Equipo 7. Elaborado por:");
         terminal.Print("Frida Alejandra Mendoza Martinez");
         terminal.Print("Gael González Méndez");
-        terminal.Print("Angel Arturo Estrada Martinez");
+        terminal.Print("Héctor Desiderio Erasto");
 
         int option = terminal.getInt("Escribe 1 para registrar a un obrero\nEscribe 2 para registrar a un jefe");
 

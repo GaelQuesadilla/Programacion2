@@ -7,6 +7,7 @@ public class Main {
         terminal.Print("Equipo 7. Elaborado por:");
         terminal.Print("Frida Alejandra Mendoza Martinez");
         terminal.Print("Gael Gonzalez Mendez");
+        terminal.Print("Héctor Desiderio Erasto");
 
         terminal.Print("Programa que registra y calcula el área y perímetro de un triangulo y un cuadrado");
 

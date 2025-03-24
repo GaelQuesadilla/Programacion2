@@ -9,6 +9,7 @@ public class Main {
         terminal.print("Equipo 7. Elaborado por");
         terminal.print("Frida Alejandra Mendoza Martinez");
         terminal.print("Gael González Méndez");
+        terminal.print("Héctor Desiderio Erasto");
 
         terminal.print("Uso del constructor: [-2,-3]");
 

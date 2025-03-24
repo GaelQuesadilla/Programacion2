@@ -11,6 +11,7 @@ public class Main {
         terminal.Print("Equipo 7. Elaborado por:");
         terminal.Print("Frida Alejandra Mendoza Martinez");
         terminal.Print("Gael Gonzalez Mendez");
+        terminal.Print("Héctor Desiderio Erasto");
 
         terminal.Print("Registro y cambio de atributos de la clase Teams (Equipos) mediante la sobrecarga de métodos");
 

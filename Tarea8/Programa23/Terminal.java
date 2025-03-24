@@ -16,6 +16,13 @@ public class Terminal {
         return value;
     }
 
+    public double requestDouble(String message) {
+        System.out.printf("\u001B[33m%s\u001B[0m\n", message);
+        double value = scanner.nextDouble();
+
+        return value;
+    }
+
     public void Print(String message) {
         System.out.println(message);
     }
@@ -23,7 +30,7 @@ public class Terminal {
     public void Print(double[] array) {
 
         for (int i = 0; i < array.length; i++) {
-            System.out.printf("%s\t", array[i]);
+            System.out.printf("%s\t", String.format("%.2f", array[i]));
         }
         System.err.println("");
     }

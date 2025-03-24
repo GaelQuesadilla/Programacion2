@@ -9,6 +9,12 @@ public class Main {
         double firstNumber = terminal.getNumber();
         final double secondNumber = terminal.getNumber();
 
+        terminal.Print("Programa que pide dos numeros, calcula la suma, resta, multiplicación y división");
+        terminal.Print("Equipo 7. Elaborado por:");
+        terminal.Print("Frida Alejandra Mendoza Martinez");
+        terminal.Print("González Méndez Gael");
+        terminal.Print("Héctor Desiderio Erasto");
+
         operation.setNumber1(firstNumber);
         operation.setNumber2(secondNumber);
         operation.calcSum();

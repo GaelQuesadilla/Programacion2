@@ -18,14 +18,14 @@ public class Main {
         terminal.Print(
                 "Registra un vector de edades y lo ordena mediante el método de BubbleSort (En su versión ID)");
 
-        // for (int i = 0; i < total; i++) {
+        for (int i = 0; i < total; i++) {
 
-        // ages[i] = terminal.requestInt("Ingresa la edad número " + (i + 1));
+            ages[i] = terminal.requestInt("Ingresa la edad número " + (i + 1));
 
-        // }
+        }
 
         // Debug only
-        ages = new int[] { 15, 23, 28, 29, 49, 10, 12, 20, 21, 8 };
+        // ages = new int[] { 15, 23, 28, 29, 49, 10, 12, 20, 21, 8 };
 
         bubbleSortId.setArray(ages);
 

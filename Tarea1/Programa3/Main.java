@@ -12,7 +12,7 @@ public class Main {
         terminal.Print("Elaborado por el equipo 7.");
         terminal.Print("Frida Alejandra Mendoza Martinez");
         terminal.Print("Gael González Méndez");
-        terminal.Print("Angel Arturo Estrada Martinez\n\n");
+        terminal.Print("Héctor Desiderio Erasto\n\n");
 
         for (int i = 0; i <= total - 1; i++) {
             current = terminal.getVote("Ingresa el voto No." + (i + 1));

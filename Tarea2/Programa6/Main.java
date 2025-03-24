@@ -8,7 +8,7 @@ public class Main {
         terminal.Print("Programa que registra un producto, ya sea un libro o un CD");
         terminal.Print("Equipo 7. Elaborado por:");
         terminal.Print("Frida Alejandra Mendoza Martinez");
-        terminal.Print("Angel Arturo Estrada Martinez");
+        terminal.Print("Héctor Desiderio Erasto");
         terminal.Print("Gael González Méndez");
 
         terminal.Print("Selecciona 1 para libro\nSelecciona 2 para CD");

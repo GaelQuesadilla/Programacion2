@@ -8,7 +8,8 @@ public class Main {
         Array array = new Array();
         Day[] days = new Day[15];
 
-        int[] inputs = new int[] { 5, 18, 45, 38, 30, 11, 29, 20, 15, 10, 5, 0, -10, 8, 28 };
+        // int[] inputs = new int[] { 5, 18, 45, 38, 30, 11, 29, 20, 15, 10, 5, 0, -10,
+        // 8, 28 };
 
         terminal.Print("Equipo 7. Elaborado por:");
         terminal.Print("Frida Alejandra Mendoza Martinez");
@@ -19,9 +20,9 @@ public class Main {
                 "Registra las temperaturas de 15 días para después, mediante búsqueda binaria buscar el día en el que sucedió el registro con determinada temperatura");
 
         for (int i = 0; i < days.length; i++) {
-            int temperature = inputs[i];
-            // int temperature = terminal.requestInt("Ingresa la temperatura del día " + (i
-            // + 1));
+            // int temperature = inputs[i];
+            int temperature = terminal.requestInt("Ingresa la temperatura del día " + (i
+                    + 1));
             days[i] = new Day(i + 1, temperature);
         }
 
