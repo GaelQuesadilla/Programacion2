@@ -1,17 +1,24 @@
 package Tarea5.Programa15;
 
-public class VistaSuma {
-    public static void main(String[] args) {
-        VistaSuma pant = new VistaSuma();
+import java.util.Scanner;
 
-        pant.escribirM(
-                "Elaborado por: Frida Alejandra Mendoza Martínez, \nGael González Méndez y Héctor Desiderio Erasto.");
-        pant.escribirM("Equipo 07, Programación 2.");
-        pant.escribirM(
-                "Funcionalidad: Programa que calcula y muestra la multiplicación de dos números usando sumas sucesivas.");
+public class VistaSuma {
+    private Scanner scanner;
+
+    public VistaSuma() {
+        this.scanner = new Scanner(System.in);
     }
 
     public void escribirM(String mensaje) {
         System.out.println(mensaje);
+    }
+
+    public int pedirEntero(String mensaje) {
+        escribirM(mensaje);
+        return scanner.nextInt();
+    }
+
+    public void cerrarScanner() {
+        scanner.close();
     }
 }
