@@ -65,6 +65,8 @@ public class Main {
         terminal.Print("Buscar 100");
         terminal.Print(list.search("100"));
 
+        terminal.Print(":))");
+
     }
 
 }
