@@ -1,4 +1,4 @@
-package Tarea12.Programa30;
+package Practicas.LinkedList.Gael.Programa1;
 
 import java.util.Scanner;
 
@@ -12,6 +12,13 @@ public class Terminal {
     public String requestString(String message) {
         System.out.printf("\u001B[33m%s\u001B[0m\n", message);
         String value = scanner.nextLine();
+
+        return value;
+    }
+
+    public int requestInt(String message) {
+        System.out.printf("\u001B[33m%s\u001B[0m\n", message);
+        int value = scanner.nextInt();
 
         return value;
     }
