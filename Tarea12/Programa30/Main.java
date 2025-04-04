@@ -8,65 +8,50 @@ public class Main {
         List list = new List();
         Terminal terminal = new Terminal(new Scanner(System.in));
 
-        terminal.Print("Constructor vacío");
-        terminal.Print(list.asArray());
+        terminal.Print("Equipo 7. Elaborado por:");
+        terminal.Print("Frida Alejandra Mendoza Martinez");
+        terminal.Print("Gael González Méndez");
+        terminal.Print("Héctor Desiderio Erasto");
 
-        terminal.Print("Insertar al final 1");
-        list.addLast("1");
-        terminal.Print(list.asArray());
+        terminal.Print(
+                "Programa que crea una lista de alumnos (nombre) implementando listas enlazadas (nodo) y administra dicha información");
 
-        terminal.Print("Insertar al final 2");
-        list.addLast("2");
-        terminal.Print(list.asArray());
+        int option = 0;
+        terminal.PrintMenu();
+        while (true) {
+            option = terminal.requestInt("Ingresa la opción: ");
+            terminal.clearLine();
 
-        terminal.Print("Insertar al final 3");
-        list.addLast("3");
-        terminal.Print(list.asArray());
+            if (option == 7) {
+                break;
+            }
+            if (option == 1) {
+                String name = terminal.requestString("Ingresa el nombre");
+                list.addFirst(name);
 
-        terminal.Print("Insertar al inicio 0");
-        list.addFirst("0");
-        terminal.Print(list.asArray());
+            } else if (option == 2) {
+                String name = terminal.requestString("Ingresa el nombre");
+                list.addLast(name);
 
-        terminal.Print("Insertar al inicio -1");
-        list.addFirst("-1");
-        terminal.Print(list.asArray());
+            } else if (option == 3) {
+                list.removeFirst();
 
-        terminal.Print("Insertar al inicio -2");
-        list.addFirst("-2");
-        terminal.Print(list.asArray());
+            } else if (option == 4) {
+                list.pop();
+            } else if (option == 5) {
+                String name = terminal.requestString("Ingresa el nombre a buscar");
+                int index = list.search(name);
 
-        terminal.Print("Remover el último");
-        list.pop();
-        terminal.Print(list.asArray());
-        terminal.Print("Remover el último");
-        list.pop();
-        terminal.Print(list.asArray());
+                if (index == -1) {
+                    terminal.Print("El estudiante no se encuentra");
+                    continue;
+                }
+                terminal.Print("El estudiante se encuentra en la posición " + (index + 1));
+            } else if (option == 6) {
+                terminal.Print(list.asArray());
+            }
 
-        terminal.Print("Remover el primero");
-        list.removeFirst();
-        terminal.Print(list.asArray());
-
-        terminal.Print("Remover el primero");
-        list.removeFirst();
-        terminal.Print(list.asArray());
-
-        terminal.Print("Tamaño: " + list.size());
-
-        terminal.Print("Insertar al final 2");
-        list.addLast("2");
-        terminal.Print(list.asArray());
-
-        terminal.Print("Buscar 0");
-        terminal.Print(list.search("0"));
-
-        terminal.Print("Buscar 2");
-        terminal.Print(list.search("2"));
-
-        terminal.Print("Buscar 100");
-        terminal.Print(list.search("100"));
-
-        terminal.Print(":))");
-
+        }
+        terminal.Print("Saliendo...");
     }
-
 }

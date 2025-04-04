@@ -54,19 +54,18 @@ public class List {
     }
 
     public int search(String target) {
-        int index = -1;
-        int i = 0;
+        int index = 0;
         Node current = this.head;
         while (current != null) {
-            if (current.getValue() == target) {
-                index = i;
-                break;
+
+            if (current.getValue().equals(target)) {
+                return index;
             }
             current = current.getNext();
-            i++;
+            index++;
         }
 
-        return index;
+        return -1;
 
     }
 
