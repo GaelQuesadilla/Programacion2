@@ -5,6 +5,14 @@
 ./Practicas/LinkedList/Gael/Programa2/List.java
 ./Practicas/LinkedList/Gael/Programa2/Main.java
 ./Practicas/LinkedList/Gael/Programa2/Terminal.java
+./Practicas/Pila/Gael/Programa1/Main.java
+./Practicas/Pila/Gael/Programa1/Node.java
+./Practicas/Pila/Gael/Programa1/Stack.java
+./Practicas/Pila/Gael/Programa1/Terminal.java
+./Practicas/Pila/Gael/Programa2/Main.java
+./Practicas/Pila/Gael/Programa2/Node.java
+./Practicas/Pila/Gael/Programa2/Pila.java
+./Practicas/Pila/Gael/Programa2/Terminal.java
 ./Tarea01/Programa1/Main.java
 ./Tarea01/Programa1/Operation.java
 ./Tarea01/Programa1/Terminal.java
