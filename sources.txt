@@ -10,7 +10,6 @@
 ./Practicas/Pila/Gael/Programa1/Stack.java
 ./Practicas/Pila/Gael/Programa1/Terminal.java
 ./Practicas/Pila/Gael/Programa2/Main.java
-./Practicas/Pila/Gael/Programa2/Node.java
 ./Practicas/Pila/Gael/Programa2/Pila.java
 ./Practicas/Pila/Gael/Programa2/Terminal.java
 ./Tarea01/Programa1/Main.java
@@ -116,3 +115,7 @@
 ./Tarea12/Programa30/Main.java
 ./Tarea12/Programa30/Node.java
 ./Tarea12/Programa30/Terminal.java
+./Tarea12/Programa33/Article.java
+./Tarea12/Programa33/List.java
+./Tarea12/Programa33/Main.java
+./Tarea12/Programa33/Terminal.java
