@@ -27,22 +27,22 @@ public class Terminal {
         return value;
     }
 
-    public void Print(String message) {
+    public static void Print(String message) {
         System.out.println(message);
     }
 
-    public void Print(int message) {
+    public static void Print(int message) {
         System.out.println(message);
     }
 
-    public void Print(Object[] array) {
+    public static void Print(Object[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.printf("%s -> ", array[i]);
         }
         System.out.println("null");
     }
 
-    public void PrintMenu() {
+    public static void PrintMenu() {
         System.out.println("\t\tMenu");
 
         System.out.println("\u001B[35m|\tOpcion\t|\tAcción\t\t\t|\u001B[0m");
