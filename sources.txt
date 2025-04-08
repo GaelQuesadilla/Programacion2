@@ -119,3 +119,8 @@
 ./Tarea12/Programa33/List.java
 ./Tarea12/Programa33/Main.java
 ./Tarea12/Programa33/Terminal.java
+./Tarea13/Programa35/Dog.java
+./Tarea13/Programa35/Main.java
+./Tarea13/Programa35/Node.java
+./Tarea13/Programa35/Stack.java
+./Tarea13/Programa35/Terminal.java
