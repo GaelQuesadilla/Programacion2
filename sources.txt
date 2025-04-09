@@ -1,3 +1,10 @@
+./Practicas/Cola/Gael/Programa1/Main.java
+./Practicas/Cola/Gael/Programa1/Node.java
+./Practicas/Cola/Gael/Programa1/Queue.java
+./Practicas/Cola/Gael/Programa1/Terminal.java
+./Practicas/Cola/Gael/Programa2/Main.java
+./Practicas/Cola/Gael/Programa2/Queue.java
+./Practicas/Cola/Gael/Programa2/Terminal.java
 ./Practicas/LinkedList/Gael/Programa1/List.java
 ./Practicas/LinkedList/Gael/Programa1/Main.java
 ./Practicas/LinkedList/Gael/Programa1/Node.java
@@ -124,3 +131,12 @@
 ./Tarea13/Programa35/Node.java
 ./Tarea13/Programa35/Stack.java
 ./Tarea13/Programa35/Terminal.java
+./Tarea14/Programa38/Main.java
+./Tarea14/Programa38/Node.java
+./Tarea14/Programa38/Queue.java
+./Tarea14/Programa38/Terminal.java
+./Tarea14/Programa39/Cat.java
+./Tarea14/Programa39/Main.java
+./Tarea14/Programa39/Node.java
+./Tarea14/Programa39/Queue.java
+./Tarea14/Programa39/Terminal.java
