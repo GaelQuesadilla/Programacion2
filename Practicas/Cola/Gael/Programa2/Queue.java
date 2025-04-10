@@ -22,7 +22,7 @@ public class Queue<T> {
 
     public T front() {
         if (this.queue.isEmpty()) {
-            System.err.println("\u001B[31mPila vacia\u001B[0m\n");
+            System.err.println("\u001B[31mCola vacia\u001B[0m\n");
             return null;
         }
         return this.queue.getFirst();
@@ -30,7 +30,7 @@ public class Queue<T> {
 
     public T last() {
         if (this.queue.isEmpty()) {
-            System.err.println("\u001B[31mPila vacia\u001B[0m\n");
+            System.err.println("\u001B[31mCola vacia\u001B[0m\n");
             return null;
         }
 

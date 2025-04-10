@@ -1,4 +1,4 @@
-package Practicas.Cola.Gael.Programa1;
+package Tarea14.Programa38;
 
 public class Queue<T> {
     private Node<T> head;
