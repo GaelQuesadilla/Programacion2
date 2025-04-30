@@ -1,4 +1,4 @@
-package Tarea15.Programa42;
+package Tarea15.Programa43;
 
 public class BinarySearchTree {
     private Node root;
@@ -11,7 +11,7 @@ public class BinarySearchTree {
         this.root = root;
     }
 
-    public void insert(int value) {
+    public void insert(Product value) {
         Node father = this.searchFather(value);
         Node node = new Node(value, father);
         if (this.root == null) {
@@ -19,18 +19,18 @@ public class BinarySearchTree {
             return;
         }
 
-        if (node.getValue() <= node.getFather().getValue()) {
+        if (node.getValue().getId() <= node.getFather().getValue().getId()) {
             node.getFather().setLeftChildren(node);
         } else {
             node.getFather().setRightChildren(node);
         }
     }
 
-    public Node searchNode(int value) {
+    public Node searchNode(int id) {
         Node aux = this.root;
-        while (aux.getValue() != value) {
+        while (aux.getValue().getId() != id) {
             System.out.printf("%s -> ", aux.getValue());
-            if (value < aux.getValue()) {
+            if (id < aux.getValue().getId()) {
                 aux = aux.getLeftChildren();
 
             } else {
@@ -44,18 +44,18 @@ public class BinarySearchTree {
 
         }
         if (aux != null) {
-            System.out.println(value);
+            System.out.println(aux.getValue());
         }
         return aux;
     }
 
-    public Node searchFather(int value) {
+    public Node searchFather(Product value) {
         Node father = null;
         Node aux = this.root;
 
         while (aux != null) {
             father = aux;
-            if (aux.getValue() > value) {
+            if (aux.getValue().getId() > value.getId()) {
                 aux = aux.getLeftChildren();
                 continue;
             }
