@@ -1,9 +1,9 @@
-package Tarea17.Programa47;
+package Tarea17.Programa46;
 
 public class Node {
 
     int keyCount = 0;
-    Furniture keys[];
+    int keys[];
     Node child[];
     boolean isLeaf = true;
 
@@ -12,7 +12,7 @@ public class Node {
      * @param grade max number of elements
      */
     public Node(int grade) {
-        this.keys = new Furniture[grade];
+        this.keys = new int[grade];
         this.child = new Node[grade];
     }
 
@@ -23,7 +23,7 @@ public class Node {
      */
     public int Find(int value) {
         for (int i = 0; i < this.keyCount; i++) {
-            if (this.keys[i].ID == value) {
+            if (this.keys[i] == value) {
                 return i;
             }
         }

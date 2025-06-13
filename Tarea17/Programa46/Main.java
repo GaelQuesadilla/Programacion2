@@ -1,4 +1,4 @@
-package Tarea17.Programa47;
+package Tarea17.Programa46;
 
 import java.util.Scanner;
 
@@ -26,15 +26,15 @@ public class Main {
                 break;
             }
             if (option == 1) {
-                Furniture furniture = terminal.requessFurniture("Ingrese el mueble a añadir");
-                mTree.insert(furniture);
+                int number = terminal.requestInt("Ingrese el número a añadir");
+                mTree.insert(number);
 
             } else if (option == 2) {
-                int number = terminal.requestInt("Ingrese el ID del mueble a eliminar");
+                int number = terminal.requestInt("Ingrese el número a eliminar");
                 mTree.delete(number);
 
             } else if (option == 3) {
-                int number = terminal.requestInt("Ingrese el ID del mueble a buscar");
+                int number = terminal.requestInt("Ingrese el número a buscar");
                 mTree.searchWithTrace(number);
             } else if (option == 4) {
                 mTree.Show();
